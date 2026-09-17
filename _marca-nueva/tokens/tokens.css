@@ -1,0 +1,42 @@
+/* ==========================================================================
+   One Page · Paleta "Noche Real" + tipografía (sept. 2026)
+   Reemplaza la paleta anterior (Papel #FBF7EF, Arena #EFE5D2, Coral #FF6B57…)
+   Contrastes WCAG verificados (ver referencia/guia-marca.md)
+   ========================================================================== */
+:root {
+  /* Oscuros */
+  --op-medianoche: #070E1B;   /* fondo de secciones oscuras: hero, banners, CTA final, footer */
+  --op-azul-real: #0B1D33;    /* color del logo · títulos y texto principal sobre claro */
+  --op-azul-profundo: #12233B;/* tarjetas y superficies dentro de secciones oscuras */
+  --op-borde-noche: #22334D;  /* bordes y divisores sobre oscuro */
+
+  /* Dorados */
+  --op-oro-real: #F4B63F;     /* ojo del logo · botón primario · íconos y acentos sobre oscuro. Nunca como texto sobre claro */
+  --op-oro-antiguo: #8A6212;  /* texto dorado, enlaces, etiquetas y filetes finos sobre claro (5,2:1 sobre Marfil) */
+
+  /* Claros */
+  --op-marfil: #FAF8F3;       /* fondo claro principal */
+  --op-blanco: #FFFFFF;       /* superficies y tarjetas */
+  --op-lino: #ECE6DA;         /* franjas alternas claras */
+  --op-borde-claro: #E3DCCF;  /* bordes finos sobre claro */
+
+  /* Texto secundario */
+  --op-pizarra: #4E5968;      /* texto secundario sobre claro (6,7:1) */
+  --op-niebla: #B4BECC;       /* texto secundario sobre oscuro (10,3:1) */
+
+  /* Acento y funcionales */
+  --op-violeta: #5E3AA8;      /* acento puntual (≤ 5 %): etiquetas de descuento con texto blanco (7,9:1) · brillos */
+  --op-whatsapp: #25D366;     /* solo botones de WhatsApp, texto en Medianoche */
+  --op-exito: #1B7F52;
+  --op-error: #B3261E;
+
+  /* Tipografía */
+  --op-font-titulos: "Lora", Georgia, serif;          /* H1 y H2, SemiBold 600; acento Lora Italic 600 */
+  --op-font-ui: "Poppins", system-ui, sans-serif;     /* H3, precios, botones, etiquetas: Medium 500 / SemiBold 600 */
+  --op-font-texto: "Inter", system-ui, sans-serif;    /* párrafos y formularios: Regular 400 / Medium 500 */
+
+  /* Forma */
+  --op-radio-boton: 10px;
+  --op-radio-tarjeta: 16px;
+  --op-sombra-tarjeta: 0 1px 2px rgba(7,14,27,.06), 0 8px 24px rgba(7,14,27,.06);
+}

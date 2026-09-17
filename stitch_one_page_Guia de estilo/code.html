@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>One Page</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;family=Lora:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base {html, body {width: 100vw; margin: 0; padding: 0; background-color: #fff8f0;} body {overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent;} .pb-safe {padding-bottom: env(safe-area-inset-bottom, 0px);} .pt-safe {padding-top: env(safe-area-inset-top, 0px);} main > :first-child {margin-top: 0 !important;} main > :last-child {margin-bottom: 0 !important;}} ::-webkit-scrollbar {display: none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"surface-bright": "#fff8f0", "surface-container-low": "#fdf3df", "error": "#ba1a1a", "on-error": "#ffffff", "on-tertiary-container": "#972015", "outline-variant": "#d4c4af", "on-background": "#1f1b10", "on-primary-container": "#694900", "on-tertiary": "#ffffff", "primary-fixed": "#ffdeaa", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary": "#4f5f78", "tertiary": "#ae3123", "on-primary-fixed": "#271900", "on-secondary-fixed-variant": "#374860", "primary-fixed-dim": "#fabc44", "surface": "#fff8f0", "primary": "#7d5700", "tertiary-container": "#ffab9e", "on-tertiary-fixed-variant": "#8c170e", "surface-container-high": "#f1e7d4", "on-surface-variant": "#504535", "inverse-on-surface": "#faf0dc", "tertiary-fixed": "#ffdad4", "tertiary-fixed-dim": "#ffb4a8", "on-error-container": "#93000a", "on-surface": "#1f1b10", "secondary-container": "#d0e1ff", "surface-container-highest": "#ebe1cf", "on-primary": "#ffffff", "outline": "#827563", "on-tertiary-fixed": "#410000", "surface-dim": "#e3d9c6", "on-primary-fixed-variant": "#5f4100", "on-secondary-fixed": "#0a1c32", "secondary-fixed": "#d4e3ff", "surface-tint": "#7d5700", "background": "#fff8f0", "inverse-primary": "#fabc44", "secondary-fixed-dim": "#b7c7e5", "on-secondary": "#ffffff", "surface-container": "#f7edda", "primary-container": "#f4b63f", "inverse-surface": "#353023", "on-secondary-container": "#53637d", "surface-variant": "#ebe1cf"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"space-xl": "2.5rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-3xl": "6rem", "gutter-mobile": "1rem", "margin": "2rem", "space-2xl": "4rem", "gutter": "1.5rem", "space-md": "1rem", "space-sm": "0.75rem", "margin-mobile": "1.25rem"}, "fontFamily": {"label-sm": ["Inter"], "headline-sm": ["Poppins"], "headline-md": ["Poppins"], "editorial-accent": ["Lora"], "headline-lg-mobile": ["Poppins"], "price-xl": ["Poppins"], "body-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Poppins"], "display-mobile": ["Poppins"], "display": ["Poppins"]}, "fontSize": {"label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}], "editorial-accent": ["inherit", {"lineHeight": "inherit", "fontWeight": "600"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "price-xl": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "display-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "display": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Volver" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="One Page Logo Oficial" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_rsNwv-GVPF2t5iq4cy1hL6gVf2jdXsGE8aeNPOsKNtEP90qcs2brF9Ed9Y-va3b8fQSlvE3dIAolrs3rUKebuDG0zlY-c5KQj5HOYREYg5S5QwPuvxuj-zDxvLZZMUUp88Nk5RIcEwSeKkunZthSUvd5F-Jn1G-NM9kmBjGoNHwa1wE1OC39nBvVm_U5SOSHmpDwL-QE8ju_VbNoNvEyjpBJ7csHaihNxmpLBpEnZAGPXz2F7glsQw"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-1 truncate max-w-[170px]">Guía De Estilo</h1></div><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-12 overflow-hidden">
+<!-- Interactive Toast Notification for copied HEX codes -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none translate-y-2" id="copyToast">
+<span class="material-symbols-outlined text-[18px] text-primary-container">check_circle</span>
+<span class="font-label-sm text-label-sm tracking-wide" id="toastMsg">Código copiado al portapapeles</span>
+</div>
+<!-- Header Section -->
+<header class="w-full px-margin-mobile pt-6 pb-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm mb-3 shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">sailing</span>
+<span>ESTUDIO EN BOGOTÁ, COLOMBIA</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight leading-tight">
+      Guía de Estilo &amp; Manual de Marca
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+      Especificaciones técnicas, sistema visual y componentes táctiles de alta conversión para <span class="font-semibold text-on-surface">One Page</span>.
+    </p>
+</header>
+<!-- Nautical Separator SVG -->
+<div class="w-full px-margin-mobile py-2 overflow-hidden text-primary-container">
+<svg class="w-full h-4" fill="none" preserveaspectratio="none" viewbox="0 0 360 16">
+<path d="M0 8C30 8 45 2 75 2C105 2 120 14 150 14C180 14 195 2 225 2C255 2 270 14 300 14C330 14 345 8 360 8" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<!-- Content Containers -->
+<div class="w-full px-margin-mobile flex flex-col gap-6 mt-2">
+<!-- BLOQUE 1: IDENTIDAD Y LOGOTIPOS -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-label-sm">01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Identidad &amp; Logotipo</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span>
+</div>
+<!-- Slogan Box -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">explore</span>
+<div>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Tesis Conceptual</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium mt-0.5">
+            “Tu negocio, a toda vela — <span class="text-primary font-semibold">la página es la vela</span>”.
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px] mt-1">
+            Una síntesis entre arte editorial en papel pesado y la hidrodinámica comercial náutica.
+          </p>
+</div>
+</div>
+<!-- Logotype Displays -->
+<div class="flex flex-col gap-3">
+<!-- Positivo / Fondo Claro -->
+<div class="bg-surface-bright rounded-lg p-4 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Versión Principal (Lienzo Claro)</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">#FBF7EF Base</span>
+</div>
+<div class="h-20 w-full flex items-center justify-center bg-surface-container-lowest rounded-lg p-2 shadow-sm">
+<img alt="One Page Logo Oficial" class="h-10 w-auto object-contain max-w-full" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_rsNwv-GVPF2t5iq4cy1hL6gVf2jdXsGE8aeNPOsKNtEP90qcs2brF9Ed9Y-va3b8fQSlvE3dIAolrs3rUKebuDG0zlY-c5KQj5HOYREYg5S5QwPuvxuj-zDxvLZZMUUp88Nk5RIcEwSeKkunZthSUvd5F-Jn1G-NM9kmBjGoNHwa1wE1OC39nBvVm_U5SOSHmpDwL-QE8ju_VbNoNvEyjpBJ7csHaihNxmpLBpEnZAGPXz2F7glsQw"/>
+</div>
+</div>
+<!-- Negativo / Azul Marino #0B1D33 -->
+<div class="bg-on-secondary-fixed rounded-lg p-4 text-surface-container-lowest flex flex-col gap-2 shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-fixed">Versión Negativo (Vanguardia)</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-surface-container-highest/20 text-primary-container">#0B1D33 Navy</span>
+</div>
+<div class="h-20 w-full flex items-center justify-center bg-on-secondary-fixed-variant/40 rounded-lg p-2">
+<div class="relative flex items-center justify-center">
+<img alt="One Page Logo Oficial" class="h-10 w-auto object-contain max-w-full brightness-125 contrast-125 filter drop-shadow-[0_2px_10px_rgba(244,182,63,0.3)]" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_rsNwv-GVPF2t5iq4cy1hL6gVf2jdXsGE8aeNPOsKNtEP90qcs2brF9Ed9Y-va3b8fQSlvE3dIAolrs3rUKebuDG0zlY-c5KQj5HOYREYg5S5QwPuvxuj-zDxvLZZMUUp88Nk5RIcEwSeKkunZthSUvd5F-Jn1G-NM9kmBjGoNHwa1wE1OC39nBvVm_U5SOSHmpDwL-QE8ju_VbNoNvEyjpBJ7csHaihNxmpLBpEnZAGPXz2F7glsQw"/>
+</div>
+</div>
+</div>
+<!-- Favicon & Emblem Display -->
+<div class="bg-surface-container-low rounded-lg p-4 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md text-on-surface">Favicon Oficial &amp; App Icon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Velero papel sobre azul marino náutico</span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-on-secondary-fixed flex items-center justify-center shadow-md relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-3.5 h-3.5 bg-primary-container rounded-bl-sm"></div>
+<!-- Custom Sailboat Favicon Icon -->
+<svg class="w-8 h-8 text-surface-bright" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path>
+<path d="M4 17h16"></path>
+<path d="M12 3v14"></path>
+<path d="M12 4l7 9h-7" fill="#F4B63F" stroke="#F4B63F"></path>
+<path d="M5 13l7-9v9H5z" fill="#FFF8F0"></path>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOQUE 2: PALETA CROMÁTICA EXACTA -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-label-sm">02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Paleta Cromática</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">touch_app</span> Toca para copiar
+        </span>
+</div>
+<div class="grid grid-cols-1 gap-2.5" id="colorGrid">
+<!-- Papel cálido -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#FBF7EF', 'Papel Cálido (Fondo)')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#FBF7EF]">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant/40">texture</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Papel Cálido (Fondo Base)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lienzo táctil editorial acogedor</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded">#FBF7EF</code>
+</div>
+</div>
+<!-- Blanco Puro -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#FFFFFF', 'Superficie Blanca')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#FFFFFF]">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant/30">layers</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Superficie (Blanco Puro)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tarjetas y contenedores nivel 1</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded">#FFFFFF</code>
+</div>
+</div>
+<!-- Franjas intermedias -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#EFE5D2', 'Franjas Intermedias')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#EFE5D2]">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant/50">view_stream</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Franjas Intermedias</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pausas rítmicas y chips</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded">#EFE5D2</code>
+</div>
+</div>
+<!-- Bordes cálidos -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#E6DCC8', 'Bordes Cálidos')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#E6DCC8]">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant/60">crop_square</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Bordes de Estructura</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Delimitadores finos de página</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded">#E6DCC8</code>
+</div>
+</div>
+<!-- Azul marino oscuro -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#0B1D33', 'Azul Marino Oscuro')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#0B1D33] text-surface-bright">
+<span class="material-symbols-outlined text-[18px]">anchor</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Azul Marino Náutico</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Títulos fuertes y bloques de noche</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded">#0B1D33</code>
+</div>
+</div>
+<!-- Gris secundario -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#5B6778', 'Gris Secundario')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#5B6778] text-surface-bright">
+<span class="material-symbols-outlined text-[18px]">notes</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Gris Secundario</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">#5B6778 (#C9D2DD en oscuro)</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded">#5B6778</code>
+</div>
+</div>
+<!-- Oro náutico primario -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#F4B63F', 'Oro Náutico Primario')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#F4B63F] text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Oro Náutico (Primario)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acentos, doblez y botones de acción</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-on-secondary-fixed bg-primary-container px-2 py-1 rounded">#F4B63F</code>
+</div>
+</div>
+<!-- Coral descuento -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#FF6B57', 'Coral Descuento')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#FF6B57] text-[#0B1D33]">
+<span class="material-symbols-outlined text-[18px]">loyalty</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Coral Promoción</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Etiquetas oferta (texto #0B1D33)</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-[#0B1D33] bg-[#FF6B57]/30 px-2 py-1 rounded">#FF6B57</code>
+</div>
+</div>
+<!-- Verde WhatsApp -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" onclick="copyColor('#25D366', 'Verde WhatsApp')" role="button" tabindex="0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full shadow-sm flex items-center justify-center bg-[#25D366] text-[#0B1D33]">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Verde WhatsApp</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conversión directa por chat</p>
+</div>
+</div>
+<div class="text-right">
+<code class="font-label-sm text-label-sm font-bold text-[#0B1D33] bg-[#25D366]/30 px-2 py-1 rounded">#25D366</code>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOQUE 3: ESCALA TIPOGRÁFICA Y JERARQUÍAS -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-label-sm">03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escala Tipográfica</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Poppins · Lora · Inter</span>
+</div>
+<!-- H1 Mobile Spec -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">H1 — Poppins Bold</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">36px móvil / 56px desktop</span>
+</div>
+<p class="font-display-mobile text-display-mobile text-on-surface mt-1 leading-tight">
+          Ventas a Toda Vela
+        </p>
+</div>
+<!-- Acento Editorial Spec (Sobre Fondo Oscuro) -->
+<div class="p-4 rounded-lg bg-on-secondary-fixed text-surface-container-lowest flex flex-col gap-1.5 shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider">Acento Editorial — Lora Italic SemiBold</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Oro Náutico #F4B63F</span>
+</div>
+<p class="font-editorial-accent italic text-primary-container text-[24px] leading-snug mt-1 font-semibold">
+          “Una página bien trazada no navega sola; atrapa el viento del mercado.”
+        </p>
+<span class="font-body-sm text-body-sm text-secondary-fixed text-[12px]">Utilizado para citas de prestigio, manifiestos y valor artesanal.</span>
+</div>
+<!-- H2 Spec -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">H2 — Poppins Bold</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">28px móvil / 40px desktop</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface mt-0.5">
+          Estructura de Conversión Rápida
+        </p>
+</div>
+<!-- H3 Spec -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">H3 — Poppins SemiBold</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">20px móvil / 24px desktop</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+          Paquetes Todo Incluido y Soporte Dedicado
+        </p>
+</div>
+<!-- P / Body Spec -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">P / Cuerpo — Inter Regular</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16px cuerpo / 18px lead</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+          Optimizamos cada elemento para velocidad en servidores de alta latencia en Colombia. Entregamos páginas listas en tiempo récord con arquitectura clara y sin tecnicismos innecesarios.
+        </p>
+</div>
+</section>
+<!-- BLOQUE 4: COMPONENTES INTERACTIVOS -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-label-sm">04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Componentes &amp; UI</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Interactivo</span>
+</div>
+<!-- Buttons Grid -->
+<div class="flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Botones de Acción</span>
+<!-- Botón Primario -->
+<div class="flex flex-col gap-1.5">
+<button class="w-full bg-[#F4B63F] hover:bg-[#E5A832] text-[#0B1D33] font-headline-sm text-label-md py-3.5 px-6 rounded-[10px] shadow-sm hover:shadow active:translate-y-0.5 transition-all flex items-center justify-center gap-2" type="button">
+<span>Elegir Paquete Comercial</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Primario: Fondo #F4B63F, texto #0B1D33, radio 10px, elevación activa.</span>
+</div>
+<!-- Botón WhatsApp -->
+<div class="flex flex-col gap-1.5">
+<button class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-[#0B1D33] font-headline-sm text-label-md py-3.5 px-6 rounded-[10px] shadow-sm active:translate-y-0.5 transition-all flex items-center justify-center gap-2" type="button">
+<!-- Inline WhatsApp Minimal Glyph -->
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 2C6.511 2 2.025 6.486 2.025 12.006c0 1.905.539 3.738 1.562 5.325L2 22l4.821-1.554a9.96 9.96 0 0 0 5.21 1.455h.004c5.52 0 10.006-4.486 10.006-10.007A9.957 9.957 0 0 0 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.956 1.393-.497.078-1.127.112-3.64-0.93-2.704-1.123-4.444-3.864-4.58-4.045-.133-.18-1.096-1.46-1.096-2.784 0-1.325.694-1.977.94-2.242.247-.265.541-.33.722-.33.181 0 .362.002.518.01.169.008.396-.064.62.474.244.583.829 2.021.902 2.167.073.146.121.317.024.51-.096.194-.145.316-.289.488-.145.171-.305.383-.435.514-.145.146-.296.305-.127.595.169.29 1.106 1.821 2.373 2.949 1.63 1.453 3.003 1.903 3.427 2.114.423.21.671.176.92-.11.248-.288 1.064-1.24 1.349-1.666.284-.426.568-.356.96-.21.393.146 2.493 1.176 2.923 1.39.43.215.717.32.822.502.106.183.106 1.059-.138 1.744z"></path>
+</svg>
+<span>Hablar con un Asesor en Bogotá</span>
+</button>
+<span class="font-body-sm text-[12px] text-on-surface-variant">WhatsApp: Fondo #25D366, texto #0B1D33, radio 10px.</span>
+</div>
+<!-- Botón Secundario -->
+<div class="flex flex-col gap-1.5">
+<button class="w-full bg-surface-container-high hover:bg-surface-container-highest text-[#0B1D33] font-headline-sm text-label-md py-3.5 px-6 rounded-[10px] transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[19px]">visibility</span>
+<span>Ver Portafolio de Demos en Vivo</span>
+</button>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Secundario: Fondo de superficie estructurada, texto #0B1D33.</span>
+</div>
+</div>
+<!-- Etiqueta de Descuento / Promo Badge -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Badge de Promoción Táctica</span>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FF6B57] text-[#0B1D33] font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[16px]">local_offer</span>
+            LANZAMIENTO -30% OFF
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fondo #FF6B57 · Texto #0B1D33</span>
+</div>
+</div>
+<!-- Tarjeta de Paquete con Dog-Ear Fold (Vela / Hoja de papel) -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Tarjeta de Paquete (Dog-Ear Fold)</span>
+<div class="relative bg-surface-bright rounded-2xl p-5 shadow-md overflow-hidden flex flex-col gap-4">
+<!-- The Gold Dog-Ear Fold Origami Accent -->
+<div class="absolute top-0 right-0 w-8 h-8 pointer-events-none">
+<div class="w-full h-full bg-[#F4B63F] shadow-sm [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+</div>
+<div class="flex items-center justify-between pr-8">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-secondary-fixed font-label-sm text-[11px] font-bold tracking-wide">
+              MÁS VENDIDO
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 Días Hábiles</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-sm text-on-surface">Plan Vela Rápida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">One Page comercial todo incluido con embudo de ventas y chat directo.</p>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-price-xl text-price-xl text-on-surface font-bold">COP $890.000</span>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Hosting y dominio .com por 1 año</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Copywriting enfocado en cierre comercial</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Conexión directa a WhatsApp corporativo</span>
+</li>
+</ul>
+<button class="w-full bg-[#F4B63F] text-[#0B1D33] font-headline-sm text-label-md py-3 rounded-[10px] flex items-center justify-center gap-2 mt-1" type="button">
+<span>Comprar Paquete Ahora</span>
+</button>
+</div>
+</div>
+<!-- Form Inputs Showcase -->
+<div class="flex flex-col gap-2.5 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Campos de Formulario &amp; Enfoque</span>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface">Nombre del Negocio o Proyecto</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container px-4 py-3 rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-bright focus:outline-none transition-colors" placeholder="Tu marca" type="text" value="Café San Alberto"/>
+<span class="material-symbols-outlined absolute right-3 text-primary text-[20px]">storefront</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface">Teléfono WhatsApp de Contacto</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container px-4 py-3 rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-bright focus:outline-none transition-colors" placeholder="+57" type="tel" value="+57 312 456 7890"/>
+<span class="material-symbols-outlined absolute right-3 text-primary text-[20px]">call</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Foco cálido dorado con elevación suave.</span>
+</div>
+</div>
+<!-- Separador Onda Marina Visual Token -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Separador Náutico Oficial</span>
+<div class="p-4 bg-on-secondary-fixed rounded-xl flex flex-col items-center justify-center gap-2">
+<svg class="w-full h-6 text-[#F4B63F]" fill="none" viewbox="0 0 320 24">
+<path d="M0 12 C40 4, 60 20, 100 12 C140 4, 160 20, 200 12 C240 4, 260 20, 300 12 C310 10, 315 11, 320 12" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<span class="font-label-sm text-[11px] text-secondary-fixed tracking-wider">STROKE DE OLA #F4B63F ENTRE BLOQUES</span>
+</div>
+</div>
+</section>
+<!-- BLOQUE 5: GRILLA Y ESPACIADO -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-label-sm">05</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Grilla &amp; Espaciado</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Base 8px</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Toda la composición responde al ritmo estricto de 8px, garantizando balance y tensión editorial precisa en dispositivos móviles y de escritorio.
+      </p>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- 8px -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">8px</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Micro spacing</p>
+</div>
+<div class="w-2 h-8 bg-primary rounded-sm"></div>
+</div>
+<!-- 16px -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">16px</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Gutters móvil</p>
+</div>
+<div class="w-4 h-8 bg-primary rounded-sm"></div>
+</div>
+<!-- 24px -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">24px</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Card padding</p>
+</div>
+<div class="w-6 h-8 bg-primary rounded-sm"></div>
+</div>
+<!-- 32px -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">32px</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Separadores</p>
+</div>
+<div class="w-8 h-8 bg-primary rounded-sm"></div>
+</div>
+<!-- 48px -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">48px</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Bloques sección</p>
+</div>
+<div class="w-12 h-8 bg-primary rounded-sm"></div>
+</div>
+<!-- 64px -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">64px</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Transición bandas</p>
+</div>
+<div class="w-16 h-8 bg-primary rounded-sm"></div>
+</div>
+</div>
+<!-- Quick Summary Footnote -->
+<div class="p-4 rounded-xl bg-surface-container text-on-surface-variant flex items-center gap-3 mt-1">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md text-on-surface">Aprobado para Producción</span>
+<span class="font-body-sm text-[12px]">One Page Design System — Bogotá D.C. 2025</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive script to copy colors and feedback micro-interaction -->
+<script>
+    function copyColor(hex, name) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(hex).catch(function(err) {
+          console.error('Error al copiar: ', err);
+        });
+      }
+      var toast = document.getElementById('copyToast');
+      var toastMsg = document.getElementById('toastMsg');
+      if (toast && toastMsg) {
+        toastMsg.textContent = 'Copiado ' + hex + ' (' + name + ')';
+        toast.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(function() {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+        }, 2200);
+      }
+    }
+  </script>
+</div></main></body></html>

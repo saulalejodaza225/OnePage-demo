@@ -1,0 +1,19 @@
+/* One Page · Noche Real — tratamiento de tarjeta (reemplaza el pliegue dorado) */
+.card-lift {
+  border: 1px solid #E3DCCF;
+  border-top: 2px solid transparent;
+  transition: transform 0.2s ease, border-top-color 0.2s ease;
+}
+.card-lift:hover {
+  border-top-color: #F4B63F;
+  transform: translateY(-2px);
+}
+.card-lift--featured {
+  border-top-color: #F4B63F;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-lift, .card-lift:hover {
+    transition: none;
+    transform: none;
+  }
+}

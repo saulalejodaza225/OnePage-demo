@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>One Page</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;family=Lora:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base {html, body {width: 100vw; margin: 0; padding: 0; background-color: #fff8f0;} body {overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent;} .pb-safe {padding-bottom: env(safe-area-inset-bottom, 0px);} .pt-safe {padding-top: env(safe-area-inset-top, 0px);} main > :first-child {margin-top: 0 !important;} main > :last-child {margin-bottom: 0 !important;}} ::-webkit-scrollbar {display: none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"surface-bright": "#fff8f0", "surface-container-low": "#fdf3df", "error": "#ba1a1a", "on-error": "#ffffff", "on-tertiary-container": "#972015", "outline-variant": "#d4c4af", "on-background": "#1f1b10", "on-primary-container": "#694900", "on-tertiary": "#ffffff", "primary-fixed": "#ffdeaa", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary": "#4f5f78", "tertiary": "#ae3123", "on-primary-fixed": "#271900", "on-secondary-fixed-variant": "#374860", "primary-fixed-dim": "#fabc44", "surface": "#fff8f0", "primary": "#7d5700", "tertiary-container": "#ffab9e", "on-tertiary-fixed-variant": "#8c170e", "surface-container-high": "#f1e7d4", "on-surface-variant": "#504535", "inverse-on-surface": "#faf0dc", "tertiary-fixed": "#ffdad4", "tertiary-fixed-dim": "#ffb4a8", "on-error-container": "#93000a", "on-surface": "#1f1b10", "secondary-container": "#d0e1ff", "surface-container-highest": "#ebe1cf", "on-primary": "#ffffff", "outline": "#827563", "on-tertiary-fixed": "#410000", "surface-dim": "#e3d9c6", "on-primary-fixed-variant": "#5f4100", "on-secondary-fixed": "#0a1c32", "secondary-fixed": "#d4e3ff", "surface-tint": "#7d5700", "background": "#fff8f0", "inverse-primary": "#fabc44", "secondary-fixed-dim": "#b7c7e5", "on-secondary": "#ffffff", "surface-container": "#f7edda", "primary-container": "#f4b63f", "inverse-surface": "#353023", "on-secondary-container": "#53637d", "surface-variant": "#ebe1cf"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"space-xl": "2.5rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-3xl": "6rem", "gutter-mobile": "1rem", "margin": "2rem", "space-2xl": "4rem", "gutter": "1.5rem", "space-md": "1rem", "space-sm": "0.75rem", "margin-mobile": "1.25rem"}, "fontFamily": {"label-sm": ["Inter"], "headline-sm": ["Poppins"], "headline-md": ["Poppins"], "editorial-accent": ["Lora"], "headline-lg-mobile": ["Poppins"], "price-xl": ["Poppins"], "body-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Poppins"], "display-mobile": ["Poppins"], "display": ["Poppins"]}, "fontSize": {"label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}], "editorial-accent": ["inherit", {"lineHeight": "inherit", "fontWeight": "600"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "price-xl": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "display-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "display": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Volver" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="One Page Logo Oficial" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_rsNwv-GVPF2t5iq4cy1hL6gVf2jdXsGE8aeNPOsKNtEP90qcs2brF9Ed9Y-va3b8fQSlvE3dIAolrs3rUKebuDG0zlY-c5KQj5HOYREYg5S5QwPuvxuj-zDxvLZZMUUp88Nk5RIcEwSeKkunZthSUvd5F-Jn1G-NM9kmBjGoNHwa1wE1OC39nBvVm_U5SOSHmpDwL-QE8ju_VbNoNvEyjpBJ7csHaihNxmpLBpEnZAGPXz2F7glsQw"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-1 truncate max-w-[170px]">Detalle De Paquete</h1></div><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- BREADCRUMB -->
+<div class="px-margin-mobile pt-3 pb-2">
+<nav class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant overflow-x-auto whitespace-nowrap">
+<span class="hover:text-primary transition-colors cursor-pointer">Inicio</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Paquetes</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-bold text-on-surface">Tienda Online</span>
+</nav>
+</div>
+<!-- GALLERY CAROUSEL (Mobile Interactive) -->
+<section class="w-full px-margin-mobile my-2">
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container shadow-md">
+<!-- Dog-ear fold accent top right -->
+<div class="absolute top-0 right-0 w-8 h-8 pointer-events-none z-20">
+<svg class="w-full h-full drop-shadow-sm" viewbox="0 0 32 32">
+<polygon fill="#f4b63f" points="0,0 32,32 32,0"></polygon>
+</svg>
+</div>
+<!-- Slides Wrapper -->
+<div class="flex transition-transform duration-300 ease-out w-full" id="gallery-track">
+<!-- Slide 1: Laptop Showcase -->
+<div class="w-full shrink-0 relative aspect-[4/3] bg-surface-container-high flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="High-end sleek laptop mockup presenting a warm minimalist Latin American e-commerce storefront with gold accents, crisp product grids, curated Colombian artisanal goods, natural studio lighting, warm cream canvas background, editorial photography angle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5ezs-lGin2jxKVV_TZoVD9iP5koOjodyjEd3YuNxeYmjNR69UWaKrX1kFRfekc-WdZLn53pma3EOoQlnc8DKBbOJFu7ld0XwxnNSaMKRhQw-LIZHRt70DHf8jjpfqUbuUpNkk5Rs3V0u1cRuc1EHCcXT6rdK5f5u87k5qOAttjGL-enHp35VJpg-AMa9SHlQRIes_EQsDQybxsF73pJ4ouwhp35jgmG4pY4taTwfMA6k_hk29zugN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent"></div>
+<div class="relative p-3 text-surface-container-lowest z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">laptop_mac</span>
+              Vista Principal en Laptop
+            </span>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2 py-0.5 rounded-full backdrop-blur-sm">1 / 4</span>
+</div>
+</div>
+<!-- Slide 2: Mobile Checkout Flow -->
+<div class="w-full shrink-0 relative aspect-[4/3] bg-surface-container-high flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Smartphone mockup showing a seamless Colombian e-commerce checkout interface featuring Nequi, PSE, and card payment selectors, high-definition tactile UI elements, soft drop shadows, warm cream aesthetic with navy typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABCB3OZEBmJoNM8GWPwYgpPndlE-Co1Wpr73HQ-rZGOB900xWaEgzf2-kkNwQrTTOXCIChQc2VSvKPQcSkK7ktR6ET598xbur61ModMC9FLdT7FxSZFmHUgRDUN6zxse3Pe-dx4roCwyyedlLZ0-Bu5Vx7WnKJLgvOTq_PjYMRZGxxo_8vH-kdFyReO2QTd6D--4NCEJ6YNDYXitKHzkOih346br0Iqp18ErvMqGeDi1NsmML1IQbp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent"></div>
+<div class="relative p-3 text-surface-container-lowest z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">smartphone</span>
+              Checkout Móvil Rápido (PSE y Nequi)
+            </span>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2 py-0.5 rounded-full backdrop-blur-sm">2 / 4</span>
+</div>
+</div>
+<!-- Slide 3: Product Detail Page -->
+<div class="w-full shrink-0 relative aspect-[4/3] bg-surface-container-high flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Contemporary digital tablet screen displaying an organized retail catalog with product filters, warm golden buy buttons, high-conversion typography, and customer review cards in warm editorial modernism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5K_71wPwCtQaNcRbH6GYtOQyqTSg9BtvuYFTPnw1dW8Q3yR2M0LXIVN_8vd-pLSFVALF85917NRnQJOocvL0-LNNDnILAY-CRrhaiCjYatviDtEMA7C5nne7H7bnUKce0PFlsxt_C9Hv3fEfw9vGxuW5QOuM0biV-AS5EfNVoL5LDvjNEO85jFObv7597QvTrTZwrSmgX8WoGuascFxFSFxj0z76tred-6K6yXOSpLK8vCAS5LN-V"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent"></div>
+<div class="relative p-3 text-surface-container-lowest z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">tab</span>
+              Ficha de Producto de Alta Conversión
+            </span>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2 py-0.5 rounded-full backdrop-blur-sm">3 / 4</span>
+</div>
+</div>
+<!-- Slide 4: Admin Dashboard -->
+<div class="w-full shrink-0 relative aspect-[4/3] bg-surface-container-high flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Clear and friendly CMS administration panel screen for non-technical boutique owners to manage orders, stock, and promotional coupons, elegant beige surface with navy blue metrics and gold charts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCizA8xTbUeWWzmKPbQmVmdsBPCJ9X6uOGWuFK7F4aiv2e-Xz7thqOzCvn77hJFIiV0Ceds0AC3QBl2dkROOlPs1x7FUf8fLURY2A4n8JsCIzFuUiGXoPCnsuX6nByTEnOYoew71kqY2BXQ918oX364G6B3LYdCI6xlgU2Ih3rXBJQ67SHUkUKs_jMQIWY1Fh6tjJMtAX38UMcsKsWgMDvQUdG3B_1tT0qOiBspHV3Bi96d7n7EZ3P6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent"></div>
+<div class="relative p-3 text-surface-container-lowest z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">dashboard</span>
+              Panel Administrador Autogestionable
+            </span>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2 py-0.5 rounded-full backdrop-blur-sm">4 / 4</span>
+</div>
+</div>
+</div>
+<!-- Navigation Arrows -->
+<button aria-label="Anterior mockup" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-surface/90 text-on-surface shadow-md flex items-center justify-center hover:bg-surface-container-lowest transition-transform active:scale-90 z-20" onclick="changeSlide(-1)">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-label="Siguiente mockup" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-surface/90 text-on-surface shadow-md flex items-center justify-center hover:bg-surface-container-lowest transition-transform active:scale-90 z-20" onclick="changeSlide(1)">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<!-- Carousel Indicators -->
+<div class="absolute bottom-10 left-0 right-0 flex justify-center gap-1.5 z-20">
+<button aria-label="Slide 1" class="carousel-dot w-2 h-2 rounded-full bg-primary-container transition-all" onclick="goToSlide(0)"></button>
+<button aria-label="Slide 2" class="carousel-dot w-2 h-2 rounded-full bg-surface-container-lowest/60 transition-all" onclick="goToSlide(1)"></button>
+<button aria-label="Slide 3" class="carousel-dot w-2 h-2 rounded-full bg-surface-container-lowest/60 transition-all" onclick="goToSlide(2)"></button>
+<button aria-label="Slide 4" class="carousel-dot w-2 h-2 rounded-full bg-surface-container-lowest/60 transition-all" onclick="goToSlide(3)"></button>
+</div>
+</div>
+</section>
+<!-- HEADER & PRICING BLOCK -->
+<section class="px-margin-mobile pt-3 pb-4">
+<div class="flex items-center justify-between gap-2 mb-2 flex-wrap">
+<!-- Promotion Badge -->
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#ff6b57] text-[#0b1d33] font-label-sm text-label-sm uppercase tracking-wide shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+        −10 % LANZAMIENTO
+      </div>
+<!-- Velocity Badge -->
+<div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+        Entrega en 15 días hábiles
+      </div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mb-1">
+      Paquete Tienda Online
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+      Ideal para vender y cobrar en línea sin comisiones por venta.
+    </p>
+<!-- Pricing Module -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm">
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-price-xl text-price-xl text-[#0b1d33] tracking-tight">$2.160.000</span>
+<span class="font-label-md text-label-md text-outline line-through">$2.400.000 COP</span>
+</div>
+<p class="font-label-sm text-label-sm text-primary font-semibold mb-3">
+        Ahorras $240.000 COP con tarifa especial de temporada
+      </p>
+<!-- Split Payment Visual Card -->
+<div class="bg-surface-container-low rounded-xl p-3.5 space-y-2.5">
+<div class="flex items-start gap-2.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-[#0b1d33] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+            1
+          </div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface">Pagas hoy (50 % anticipo para iniciar)</p>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">$1.080.000 COP</p>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant/60"></div>
+<div class="flex items-start gap-2.5">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+            2
+          </div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface-variant">Saldo restante al publicar y capacitarte</p>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">$1.080.000 COP</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA ACTION BUTTONS -->
+<section class="px-margin-mobile space-y-3 pt-1 pb-4">
+<!-- Primary Gold CTA -->
+<button class="w-full py-3.5 px-6 rounded-xl bg-[#f4b63f] hover:bg-[#e5a832] text-[#0b1d33] font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+      Agregar al carrito e iniciar
+    </button>
+<!-- WhatsApp Anchor CTA -->
+<a class="w-full py-3 px-6 rounded-xl bg-[#25d366] hover:bg-[#20b858] text-[#0b1d33] font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all" href="https://wa.me/573202784199?text=Hola%20One%20Page,%20quiero%20informaci%C3%B3n%20del%20Paquete%20Tienda%20Online" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 2C6.516 2 2.016 6.5 2.016 12.016c0 1.953.563 3.828 1.625 5.438L2 22.031l4.734-1.578A9.97 9.97 0 0012.03 22c5.516 0 10.016-4.5 10.016-10.016C22.047 6.5 17.547 2 12.031 2zm0 18.234a8.16 8.16 0 01-4.234-1.187l-.313-.188-3.14.985.86-3.047-.204-.328A8.17 8.17 0 013.78 12.016C3.78 7.484 7.484 3.766 12.03 3.766c4.547 0 8.25 3.718 8.25 8.25 0 4.547-3.703 8.218-8.25 8.218zm4.516-6.172c-.25-.125-1.469-.734-1.703-.812-.234-.094-.406-.14-.578.14-.172.282-.672.829-.828.985-.156.172-.313.187-.563.062-.25-.125-1.047-.39-2-1.234-.734-.656-1.234-1.484-1.375-1.734-.14-.25-.016-.39.11-.516.109-.109.25-.281.375-.422.125-.14.172-.25.25-.422.078-.172.047-.328-.016-.453-.062-.125-.578-1.39-.797-1.922-.218-.515-.437-.437-.593-.453l-.5-.015c-.172 0-.453.062-.688.328-.234.25-.906.89-.906 2.156 0 1.282.938 2.516 1.063 2.688.14.172 1.844 2.828 4.469 3.969.625.265 1.109.437 1.484.562.625.203 1.188.172 1.64.11.5-.079 1.469-.61 1.672-1.203.203-.61.203-1.125.14-1.235-.062-.093-.234-.156-.484-.281z"></path>
+</svg>
+      Consultar por WhatsApp (+57 3202784199)
+    </a>
+</section>
+<!-- TRUST & GUARANTEE BADGES (4 Cards) -->
+<section class="px-margin-mobile py-4">
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col items-center text-center">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Precio cerrado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin cobros ni sorpresas ocultas</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col items-center text-center">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">2 Rondas de ajustes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Afinamos hasta tu satisfacción</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col items-center text-center">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dominio y Hosting</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100 % registrados a tu nombre</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col items-center text-center">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Pago seguro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PSE, Nequi y todas las tarjetas</span>
+</div>
+</div>
+</section>
+<!-- MARITIME DIVIDER WAVE -->
+<div class="w-full overflow-hidden text-surface-container-high py-2">
+<svg class="w-full h-5 fill-current" preserveaspectratio="none" viewbox="0 0 1200 40">
+<path d="M0,20 C150,35 350,5 500,20 C650,35 850,5 1000,20 C1100,30 1170,15 1200,20 L1200,40 L0,40 Z"></path>
+</svg>
+</div>
+<!-- WHAT'S INCLUDED DETAILED SECTION -->
+<section class="px-margin-mobile py-4">
+<div class="mb-4">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-[15px] text-primary">inventory_2</span>
+        ESPECIFICACIONES DE VELA
+      </div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        ¿Qué incluye este paquete?
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tu plataforma comercial configurada con precisión para recibir ventas reales desde el primer día.
+      </p>
+</div>
+<!-- 10 Feature Spec Cards -->
+<div class="space-y-2.5">
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">view_quilt</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Hasta 16 secciones a medida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Arquitectura pensada en la experiencia de compra, historia de marca y llamado directo al pedido.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">shelves</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Catálogo de hasta 50 productos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subida y organización meticulosa por categorías, variantes (color, talla), precios y descripciones.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Carrito y Pasarela integrada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cobros directos con PSE, Nequi, Daviplata, tarjetas crédito y débito sin intermediación costosa.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Buscador interno de productos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Filtro instantáneo con autocompletado para que tus clientes encuentren lo que buscan en segundos.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Panel de control CMS autogestionable</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interfaz súper amigable para cambiar fotos, pausar inventario, crear cupones y actualizar precios sin código.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">article</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Blog integrado para posicionamiento</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Módulo editorial optimizado para SEO que atrae tráfico orgánico desde Google a tus productos.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Galería de hasta 50 imágenes optimizadas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compresión WebP de última generación para carga ultra veloz en redes celulares 4G/5G.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-[#25d366]/20 flex items-center justify-center text-[#0b1d33] shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Botón flotante WhatsApp y cotizador</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cierra ventas con clientes indecisos mediante asesoría personalizada directa a tu chat.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Suite analítica y píxeles comerciales</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Google Analytics 4, Tag Manager, Hotjar y píxeles de Meta Ads y Google Ads listos para pauta.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">video_library</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Capacitación grabada personalizada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Video tutorial exclusivo de tu propia tienda para que tú o tu equipo administren todo sin depender de nadie.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TRANSPARENT TERMS & CONDITIONS -->
+<section class="px-margin-mobile py-4">
+<div class="bg-surface-container p-4 rounded-2xl">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">gavel</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Condiciones Transparentes</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">50 % para iniciar y 50 % al publicar:</strong> El segundo pago se realiza únicamente cuando apruebas el resultado final y recibes tu capacitación.
+          </p>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Dos rondas completas de ajustes:</strong> Revisamos colores, tipografías, banners y contenidos hasta que tu tienda quede impecable.
+          </p>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Acompañamiento en Dominio y Hosting:</strong> Te guiamos paso a paso para que las licencias queden legalmente a tu nombre, garantizando tu propiedad total.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- OTHER AVAILABLE PACKAGES (COMPARATIVE) -->
+<section class="px-margin-mobile pt-3 pb-6">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Otros paquetes</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Comparar opciones</span>
+</div>
+<div class="space-y-2.5">
+<!-- Option 1: Landing Page -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-center justify-between gap-2 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Para campañas de pauta</span>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Landing Page</h4>
+<p class="font-body-sm text-body-sm text-outline">Una sola página de alto impacto</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-headline-sm text-headline-sm text-[#0b1d33] font-bold">$675.000</p>
+<span class="font-label-sm text-label-sm text-primary flex items-center justify-end">
+            Ver detalle
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Option 2: Pagina PYME -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-center justify-between gap-2 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Para empresas de servicios</span>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Página PYME</h4>
+<p class="font-body-sm text-body-sm text-outline">Hasta 5 páginas internas completas</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-headline-sm text-headline-sm text-[#0b1d33] font-bold">$1.080.000</p>
+<span class="font-label-sm text-label-sm text-primary flex items-center justify-end">
+            Ver detalle
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Option 3: Pagina Empresarial -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex items-center justify-between gap-2 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Corporativo &amp; Expansión</span>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Página Empresarial</h4>
+<p class="font-body-sm text-body-sm text-outline">Multi-idioma y hasta 10 secciones</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-headline-sm text-headline-sm text-[#0b1d33] font-bold">$1.620.000</p>
+<span class="font-label-sm text-label-sm text-primary flex items-center justify-end">
+            Ver detalle
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- STICKY BOTTOM CHECKOUT TRAY FOR EFFORTLESS CONVERSION -->
+<div class="sticky bottom-0 z-40 bg-surface/95 backdrop-blur-md px-margin-mobile py-2.5 shadow-[0_-4px_16px_rgba(11,29,51,0.08)] flex items-center justify-between gap-3">
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">50 % para iniciar:</span>
+<p class="font-headline-sm text-headline-sm text-[#0b1d33] font-bold leading-none">$1.080.000</p>
+</div>
+<button class="px-5 py-2.5 rounded-xl bg-[#f4b63f] hover:bg-[#e5a832] text-[#0b1d33] font-label-md text-label-md font-bold shrink-0 shadow-sm active:scale-95 transition-all" type="button">
+      Iniciar Tienda
+    </button>
+</div>
+</div>
+<!-- CAROUSEL INTERACTION SCRIPT -->
+<script>
+  (function() {
+    let currentSlide = 0;
+    const totalSlides = 4;
+    const track = document.getElementById('gallery-track');
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    window.updateCarousel = function() {
+      if (!track) return;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, idx) => {
+        if (idx === currentSlide) {
+          dot.className = 'carousel-dot w-4 h-2 rounded-full bg-primary-container transition-all';
+        } else {
+          dot.className = 'carousel-dot w-2 h-2 rounded-full bg-surface-container-lowest/60 transition-all';
+        }
+      });
+    };
+
+    window.changeSlide = function(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      window.updateCarousel();
+    };
+
+    window.goToSlide = function(index) {
+      currentSlide = index;
+      window.updateCarousel();
+    };
+
+    // Initial configuration
+    window.updateCarousel();
+  })();
+</script></main></body></html>

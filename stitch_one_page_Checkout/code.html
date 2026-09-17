@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>One Page</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;family=Lora:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base {html, body {width: 100vw; margin: 0; padding: 0; background-color: #fff8f0;} body {overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent;} .pb-safe {padding-bottom: env(safe-area-inset-bottom, 0px);} .pt-safe {padding-top: env(safe-area-inset-top, 0px);} main > :first-child {margin-top: 0 !important;} main > :last-child {margin-bottom: 0 !important;}} ::-webkit-scrollbar {display: none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"surface-bright": "#fff8f0", "surface-container-low": "#fdf3df", "error": "#ba1a1a", "on-error": "#ffffff", "on-tertiary-container": "#972015", "outline-variant": "#d4c4af", "on-background": "#1f1b10", "on-primary-container": "#694900", "on-tertiary": "#ffffff", "primary-fixed": "#ffdeaa", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary": "#4f5f78", "tertiary": "#ae3123", "on-primary-fixed": "#271900", "on-secondary-fixed-variant": "#374860", "primary-fixed-dim": "#fabc44", "surface": "#fff8f0", "primary": "#7d5700", "tertiary-container": "#ffab9e", "on-tertiary-fixed-variant": "#8c170e", "surface-container-high": "#f1e7d4", "on-surface-variant": "#504535", "inverse-on-surface": "#faf0dc", "tertiary-fixed": "#ffdad4", "tertiary-fixed-dim": "#ffb4a8", "on-error-container": "#93000a", "on-surface": "#1f1b10", "secondary-container": "#d0e1ff", "surface-container-highest": "#ebe1cf", "on-primary": "#ffffff", "outline": "#827563", "on-tertiary-fixed": "#410000", "surface-dim": "#e3d9c6", "on-primary-fixed-variant": "#5f4100", "on-secondary-fixed": "#0a1c32", "secondary-fixed": "#d4e3ff", "surface-tint": "#7d5700", "background": "#fff8f0", "inverse-primary": "#fabc44", "secondary-fixed-dim": "#b7c7e5", "on-secondary": "#ffffff", "surface-container": "#f7edda", "primary-container": "#f4b63f", "inverse-surface": "#353023", "on-secondary-container": "#53637d", "surface-variant": "#ebe1cf"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"space-xl": "2.5rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-3xl": "6rem", "gutter-mobile": "1rem", "margin": "2rem", "space-2xl": "4rem", "gutter": "1.5rem", "space-md": "1rem", "space-sm": "0.75rem", "margin-mobile": "1.25rem"}, "fontFamily": {"label-sm": ["Inter"], "headline-sm": ["Poppins"], "headline-md": ["Poppins"], "editorial-accent": ["Lora"], "headline-lg-mobile": ["Poppins"], "price-xl": ["Poppins"], "body-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Poppins"], "display-mobile": ["Poppins"], "display": ["Poppins"]}, "fontSize": {"label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}], "editorial-accent": ["inherit", {"lineHeight": "inherit", "fontWeight": "600"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "price-xl": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "display-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "display": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Volver" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="One Page Logo Oficial" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_rsNwv-GVPF2t5iq4cy1hL6gVf2jdXsGE8aeNPOsKNtEP90qcs2brF9Ed9Y-va3b8fQSlvE3dIAolrs3rUKebuDG0zlY-c5KQj5HOYREYg5S5QwPuvxuj-zDxvLZZMUUp88Nk5RIcEwSeKkunZthSUvd5F-Jn1G-NM9kmBjGoNHwa1wE1OC39nBvVm_U5SOSHmpDwL-QE8ju_VbNoNvEyjpBJ7csHaihNxmpLBpEnZAGPXz2F7glsQw"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-1 truncate max-w-[170px]">Checkout</h1></div><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Trust Security Banner -->
+<div class="bg-surface-container-high px-margin-mobile py-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-tight">Pago seguro cifrado SSL 256-bit</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-2 py-0.5 rounded-full shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">Pasarela Activa</span>
+</div>
+</div>
+<div class="px-margin-mobile flex flex-col gap-5 pt-3">
+<!-- Summary Card: Collapsible Maritime Sail Card with Dog-Ear Accent -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-md overflow-hidden transition-all duration-300">
+<!-- Dog ear motif aesthetic -->
+<div class="absolute top-0 right-0 w-8 h-8 pointer-events-none">
+<svg class="w-full h-full" viewbox="0 0 32 32">
+<polygon fill="#f4b63f" opacity="0.85" points="0,0 32,32 32,0"></polygon>
+<polygon fill="#d4c4af" opacity="0.35" points="0,0 32,32 0,32"></polygon>
+</svg>
+</div>
+<div class="p-4 cursor-pointer select-none" id="summary-toggle" onclick="toggleSummary()">
+<div class="flex items-center justify-between pr-4">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">sailing</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Inversión Proyecto</span>
+<span class="bg-surface-container-high text-on-surface-variant px-1.5 py-0.5 rounded text-[10px] font-label-sm">50% Anticipo</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold text-[17px] leading-tight">Paquete Tienda Online</h2>
+</div>
+</div>
+<button aria-label="Desplegar resumen" class="text-on-surface-variant transition-transform duration-300" id="summary-icon" type="button">
+<span class="material-symbols-outlined text-[24px]">expand_more</span>
+</button>
+</div>
+<div class="mt-3 flex items-baseline justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-none mb-1">A pagar hoy para zarpar:</p>
+<span class="font-headline-md text-headline-md text-on-surface font-bold text-[22px] tracking-tight">$1.080.000 <span class="text-[13px] font-medium text-on-surface-variant">COP</span></span>
+</div>
+<span class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full text-[11px]">Inicio Inmediato</span>
+</div>
+</div>
+<!-- Collapsible breakdown -->
+<div class="px-4 pb-4 hidden flex-col gap-2.5 pt-1 bg-surface-container-lowest" id="summary-details">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm text-[13px] pt-2">
+<span>Valor total de la solución:</span>
+<span class="font-semibold text-on-surface">$2.160.000 COP</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm text-[13px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">check_circle</span> Anticipo de arranque (50%):
+          </span>
+<span class="font-bold text-primary">$1.080.000 COP</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm text-[13px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">schedule</span> Saldo contra entrega y publicación:
+          </span>
+<span class="font-medium text-on-surface">$1.080.000 COP</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">speed</span>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant leading-tight">Garantía de entrega en <strong class="text-on-surface">5 días hábiles</strong> posteriores a la entrega de insumos.</p>
+</div>
+</div>
+</div>
+<!-- Step 1: Client Contact -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-on-secondary-fixed text-surface flex items-center justify-center font-label-sm text-label-sm text-[12px]">1</div>
+<h3 class="font-headline-sm text-headline-sm text-[16px] text-on-surface font-semibold">Tus datos de contacto</h3>
+</div>
+<span class="font-label-sm text-label-sm text-[11px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">shield</span> Para tu contrato
+        </span>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="fullName">Nombre y apellido completo *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[19px] absolute left-3">badge</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none focus:bg-surface-container-lowest transition-colors" id="fullName" placeholder="Ej. Valentina Morales Gómez" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="email">Correo electrónico comercial *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[19px] absolute left-3">mail</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none focus:bg-surface-container-lowest transition-colors" id="email" placeholder="hola@tunegocio.com" type="email"/>
+</div>
+<span class="font-body-sm text-body-sm text-[11px] text-on-surface-variant">Aquí recibirás los accesos de administración y el comprobante legal.</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="whatsapp">WhatsApp / Teléfono de contacto *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[#25D366] text-[19px] absolute left-3">chat</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none focus:bg-surface-container-lowest transition-colors font-medium" id="whatsapp" type="tel" value="+57 "/>
+</div>
+<span class="font-body-sm text-body-sm text-[11px] text-on-surface-variant">Coordinación directa de diseño y avances de tienda.</span>
+</div>
+</div>
+</section>
+<!-- Step 2: Business Project Context -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-on-secondary-fixed text-surface flex items-center justify-center font-label-sm text-label-sm text-[12px]">2</div>
+<h3 class="font-headline-sm text-headline-sm text-[16px] text-on-surface font-semibold">Información de tu negocio</h3>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="bizName">Nombre comercial de la marca *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[19px] absolute left-3">storefront</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none focus:bg-surface-container-lowest transition-colors" id="bizName" placeholder="Ej. Macondo Café Artesanal" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="flex flex-col gap-1 min-w-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px] truncate" for="city">Ciudad / Municipio *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-2.5">location_on</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm rounded-lg py-2.5 pl-8 pr-2 focus:outline-none focus:bg-surface-container-lowest text-[13px]" id="city" placeholder="Bogotá, Medellín..." type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px] truncate" for="industry">Sector económico *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-2.5">category</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm rounded-lg py-2.5 pl-8 pr-2 focus:outline-none focus:bg-surface-container-lowest text-[13px]" id="industry" placeholder="Moda, Alimentos..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Domain segmented selector -->
+<div class="flex flex-col gap-1.5 pt-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]">¿Ya cuentas con dominio web propio (.com / .co)?</label>
+<div class="grid grid-cols-3 gap-1.5" id="domain-options">
+<button class="domain-btn bg-surface-container-high text-on-surface py-2 px-1 rounded-lg font-label-sm text-label-sm text-[11px] text-center leading-tight transition-all" onclick="selectDomain(this, 'has_domain')" type="button">
+              Sí, ya lo tengo
+            </button>
+<button class="domain-btn bg-primary-container text-on-primary-container shadow-sm py-2 px-1 rounded-lg font-label-sm text-label-sm text-[11px] text-center leading-tight transition-all font-bold" onclick="selectDomain(this, 'need_help')" type="button">
+              Necesito asesoría
+            </button>
+<button class="domain-btn bg-surface-container-high text-on-surface py-2 px-1 rounded-lg font-label-sm text-label-sm text-[11px] text-center leading-tight transition-all" onclick="selectDomain(this, 'not_sure')" type="button">
+              No sé qué es
+            </button>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="instagram">Instagram o web actual (Opcional)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[19px] absolute left-3">link</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none focus:bg-surface-container-lowest transition-colors text-[13px]" id="instagram" placeholder="@tunegocio en IG o link actual" type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Step 3: Payment Gateway Selector & Form -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-on-secondary-fixed text-surface flex items-center justify-center font-label-sm text-label-sm text-[12px]">3</div>
+<h3 class="font-headline-sm text-headline-sm text-[16px] text-on-surface font-semibold">Método de pago del anticipo</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-[15px] font-bold text-primary">$1.080.000</span>
+</div>
+<!-- Tabs -->
+<div class="flex items-center bg-surface-container-high p-1 rounded-lg gap-1">
+<button class="flex-1 py-1.5 px-2 rounded-md font-label-sm text-label-sm text-[12px] text-center transition-all bg-surface-container-lowest text-on-surface shadow-sm flex items-center justify-center gap-1" id="tab-pse" onclick="setPaymentTab('pse')" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">account_balance</span> PSE
+        </button>
+<button class="flex-1 py-1.5 px-2 rounded-md font-label-sm text-label-sm text-[12px] text-center transition-all text-on-surface-variant flex items-center justify-center gap-1" id="tab-wallet" onclick="setPaymentTab('wallet')" type="button">
+<span class="material-symbols-outlined text-[15px]">smartphone</span> Nequi/Davi
+        </button>
+<button class="flex-1 py-1.5 px-2 rounded-md font-label-sm text-label-sm text-[12px] text-center transition-all text-on-surface-variant flex items-center justify-center gap-1" id="tab-card" onclick="setPaymentTab('card')" type="button">
+<span class="material-symbols-outlined text-[15px]">credit_card</span> Tarjeta
+        </button>
+</div>
+<!-- PSE Panel -->
+<div class="flex flex-col gap-3 pt-1" id="panel-pse">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+</div>
+<p class="font-body-sm text-body-sm text-[11px] text-on-surface-variant leading-tight">Débito directo sin recargo desde Bancolombia, Davivienda, Nu, BBVA, Falabella o cualquier entidad colombiana.</p>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="pseBank">Selecciona tu Entidad Financiera *</label>
+<div class="relative flex items-center">
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 pl-3 pr-8 focus:outline-none appearance-none" id="pseBank">
+<option disabled="" selected="" value="">Elige tu banco...</option>
+<option value="bancolombia">Bancolombia</option>
+<option value="davivienda">Davivienda</option>
+<option value="nu">Nu Colombia (Cuenta Nu)</option>
+<option value="bbva">BBVA Colombia</option>
+<option value="bogota">Banco de Bogotá</option>
+<option value="falabella">Banco Falabella</option>
+<option value="scotiabank">Scotiabank Colpatria</option>
+<option value="occidente">Banco de Occidente</option>
+<option value="lulo">Lulo Bank</option>
+<option value="rappi">RappiPay</option>
+</select>
+<span class="material-symbols-outlined text-outline text-[20px] absolute right-3 pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="psePerson">Tipo de persona</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2 px-2.5 focus:outline-none text-[13px]" id="psePerson">
+<option value="natural">Natural</option>
+<option value="juridica">Jurídica (Empresa)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="pseDoc">Número documento</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2 px-2.5 focus:outline-none text-[13px]" id="pseDoc" placeholder="CC o NIT" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Nequi / Daviplata Panel -->
+<div class="hidden flex-col gap-3 pt-1" id="panel-wallet">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+<span class="font-label-sm text-label-sm text-[12px]">Transferencia directa con llave digital</span>
+</div>
+<span class="font-label-sm text-label-sm text-[11px] font-bold uppercase">Inmediato</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="walletPhone">Número celular asociado a tu billetera</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[19px] absolute left-3">phonelink_ring</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none" id="walletPhone" placeholder="Ej. 320 278 4199" type="tel"/>
+</div>
+<span class="font-body-sm text-body-sm text-[11px] text-on-surface-variant">Te llegará una notificación push a tu app para confirmar el débito por $1.080.000 COP.</span>
+</div>
+</div>
+<!-- Credit / Debit Card Panel -->
+<div class="hidden flex-col gap-3 pt-1" id="panel-card">
+<div class="flex items-center gap-2 justify-end text-on-surface-variant font-label-sm text-label-sm text-[11px]">
+<span>Visa</span> • <span>Mastercard</span> • <span>Amex</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="cardNumber">Número de tarjeta</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[19px] absolute left-3">payment</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 pl-10 pr-3 focus:outline-none" id="cardNumber" maxlength="19" placeholder="0000 0000 0000 0000" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="cardExp">Vencimiento</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2 px-2.5 focus:outline-none text-center" id="cardExp" maxlength="5" placeholder="MM/AA" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="cardCvc">CVC / CVV</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2 px-2.5 focus:outline-none text-center" id="cardCvc" maxlength="4" placeholder="123" type="password"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant text-[12px]" for="cardDues">Número de cuotas</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2 px-2.5 focus:outline-none text-[13px]" id="cardDues">
+<option value="1">1 cuota (Sin intereses bancarios)</option>
+<option value="3">3 cuotas</option>
+<option value="6">6 cuotas</option>
+<option value="12">12 cuotas</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Visual Polish: Maritime Craft Badge & Guarantee Preview -->
+<div class="bg-surface-container-high/60 rounded-xl p-3.5 flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-[22px]">assured_workload</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-[14px] text-on-surface font-semibold">Respaldo contractual y facturación DIAN</h4>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant leading-relaxed mt-0.5">
+          Recibirás factura electrónica avalada y confirmación inmediata con tu contrato de desarrollo digital por WhatsApp y correo electrónico.
+        </p>
+</div>
+</div>
+<!-- Legal Terms and Consent -->
+<div class="flex flex-col gap-2 pt-1">
+<label class="flex items-start gap-2.5 cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-[#f4b63f]" id="legalTerms" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-[12px] text-on-surface-variant leading-snug">
+          He leído y acepto los <strong class="text-on-surface underline font-medium">Términos y condiciones</strong>, la <strong class="text-on-surface underline font-medium">Política de privacidad y tratamiento de datos</strong> (Habeas Data), y el <strong class="text-on-surface underline font-medium">Derecho de retracto</strong> de la legislación colombiana.
+        </span>
+</label>
+</div>
+<!-- Main High-Converting Action Button -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full bg-primary-container hover:bg-[#fabc44] active:scale-[0.99] text-on-secondary-fixed font-headline-sm text-headline-sm text-[16px] py-4 px-5 rounded-xl shadow-lg flex items-center justify-center gap-2 font-bold tracking-tight transition-all" onclick="handleCheckoutSubmission()" type="button">
+<span class="material-symbols-outlined text-[22px]">sailing</span>
+<span>Pagar anticipo de $1.080.000 COP y zarpamos</span>
+</button>
+<div class="flex items-center justify-center gap-2 pt-1">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">lock</span>
+<span class="font-label-sm text-label-sm text-[11px] text-on-surface-variant">Transacción encriptada por pasarela certificada PCI-DSS</span>
+</div>
+</div>
+<!-- Immediate Human Contact / Support Anchor -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between mt-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#25D366]/20 flex items-center justify-center text-[#25D366]">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[12px] text-on-surface font-semibold">¿Necesitas ayuda para pagar?</span>
+<span class="font-body-sm text-body-sm text-[11px] text-on-surface-variant">Llámanos o escríbenos al asesor de guardia</span>
+</div>
+</div>
+<a class="bg-surface-container text-on-surface hover:bg-surface-container-high px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-[12px] flex items-center gap-1 font-semibold transition-colors" href="https://wa.me/573202784199" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px] text-[#25D366]">chat</span> +57 320 278 4199
+      </a>
+</div>
+</div>
+</div>
+<script>
+  function toggleSummary() {
+    const details = document.getElementById('summary-details');
+    const icon = document.getElementById('summary-icon');
+    if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+      details.classList.add('flex');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      details.classList.add('hidden');
+      details.classList.remove('flex');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function selectDomain(btn, value) {
+    document.querySelectorAll('.domain-btn').forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-sm');
+      b.classList.add('bg-surface-container-high', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+    btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-sm');
+  }
+
+  function setPaymentTab(tab) {
+    const tabs = ['pse', 'wallet', 'card'];
+    tabs.forEach(t => {
+      const panel = document.getElementById('panel-' + t);
+      const btn = document.getElementById('tab-' + t);
+      if (t === tab) {
+        panel.classList.remove('hidden');
+        panel.classList.add('flex');
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+      } else {
+        panel.classList.add('hidden');
+        panel.classList.remove('flex');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      }
+    });
+  }
+
+  function handleCheckoutSubmission() {
+    const terms = document.getElementById('legalTerms');
+    if (!terms.checked) {
+      alert('Por favor, acepta los Términos y Condiciones para continuar con tu orden.');
+      terms.focus();
+      return;
+    }
+    const name = document.getElementById('fullName').value.trim();
+    if (!name) {
+      alert('Por favor ingresa tu nombre completo para el contrato de servicio.');
+      document.getElementById('fullName').focus();
+      return;
+    }
+    // Simulation state
+    const btn = event.currentTarget;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[22px] animate-spin">refresh</span> Conectando con la pasarela...';
+    btn.disabled = true;
+    setTimeout(() => {
+      alert('¡Excelente decisión! Te estamos redirigiendo a la pasarela bancaria oficial para autorizar los $1.080.000 COP.');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[22px]">check_circle</span> Anticipo Autorizado';
+    }, 1200);
+  }
+</script></main></body></html>
