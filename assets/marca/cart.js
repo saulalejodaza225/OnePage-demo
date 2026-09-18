@@ -87,9 +87,42 @@
       nombre: 'Plan Impulso Rápido',
       resumen: 'Landing Page + 2 meses de Mantenimiento VIP incluidos, para lanzar y afinar tu página sin pagar aparte las primeras semanas',
       entrega: '5 días hábiles',
-      precio: 890000,
+      precio: 795175,
       precioOriginal: 935500,
       fotos: 15,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-pyme': {
+      id: 'combo-impulso-pyme',
+      nombre: 'Plan Impulso PYME',
+      resumen: 'Página PYME + 2 meses de Mantenimiento VIP incluidos, para lanzar y afinar tu página sin pagar aparte las primeras semanas',
+      entrega: '8 días hábiles',
+      precio: 1177675,
+      precioOriginal: 1385500,
+      fotos: 20,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-empresarial': {
+      id: 'combo-impulso-empresarial',
+      nombre: 'Plan Impulso Empresarial',
+      resumen: 'Página Empresarial + 2 meses de Mantenimiento VIP incluidos, para lanzar y afinar tu catálogo sin pagar aparte las primeras semanas',
+      entrega: '12 días hábiles',
+      precio: 1687675,
+      precioOriginal: 1985500,
+      fotos: 35,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-tienda': {
+      id: 'combo-impulso-tienda',
+      nombre: 'Plan Impulso Tienda',
+      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP incluidos, para lanzar y afinar tu tienda sin pagar aparte las primeras semanas',
+      entrega: '15 días hábiles',
+      precio: 2197675,
+      precioOriginal: 2585500,
+      fotos: 50,
       tipo: 'paquete',
       icon: 'bolt'
     }
