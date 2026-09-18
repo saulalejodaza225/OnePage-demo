@@ -8,7 +8,10 @@
 <section class="w-full bg-on-secondary-fixed text-surface relative overflow-hidden shadow-sm">
 <!-- Video hero del león con galaxia: decorativo, detrás/encima del texto en móvil, 55% derecha en escritorio -->
 <div class="absolute inset-0 lg:left-auto lg:right-0 lg:w-[55%]" id="heroLeonWrap">
-<video aria-hidden="true" class="w-full h-full object-contain lg:object-right object-bottom will-change-transform" id="heroLeonVideo" loop="" muted="" playsinline="" poster="assets/marca/imagenes/hero-leon-galaxia-1600.jpg" preload="auto">
+<video aria-hidden="true" class="absolute inset-0 w-full h-full object-contain lg:object-right object-bottom will-change-transform" id="heroLeonVideo" muted="" playsinline="" poster="assets/marca/imagenes/hero-leon-galaxia-1600.jpg" preload="auto">
+<source src="assets/marca/video/hero-leon-galaxia-completo.mp4" type="video/mp4"/>
+</video>
+<video aria-hidden="true" class="absolute inset-0 w-full h-full object-contain lg:object-right object-bottom will-change-transform opacity-0" id="heroLeonVideoB" muted="" playsinline="" preload="auto">
 <source src="assets/marca/video/hero-leon-galaxia-completo.mp4" type="video/mp4"/>
 </video>
 <div class="absolute inset-0 bg-gradient-to-b from-on-secondary-fixed via-on-secondary-fixed/45 via-60% to-transparent to-92% lg:bg-gradient-to-r lg:from-on-secondary-fixed lg:via-on-secondary-fixed/35 lg:via-40% lg:to-transparent lg:to-70%"></div>
@@ -28,24 +31,48 @@
       </p>
 <script>
   (function () {
-    var video = document.getElementById('heroLeonVideo');
-    if (!video) return;
+    var videoA = document.getElementById('heroLeonVideo');
+    var videoB = document.getElementById('heroLeonVideoB');
+    if (!videoA || !videoB) return;
     var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) return;
-    // Secuencia completa (galaxia + rugido) en bucle continuo, con un fundido corto
-    // justo en el reinicio para que el cambio de escena no se vea como un salto o recarga.
+    // Secuencia completa (galaxia + rugido) en bucle continuo. Se usan dos <video> superpuestos:
+    // mientras uno se ve, el otro ya arrancó en segundo plano (invisible) y va "calentando" su
+    // reproducción, así el reinicio nunca depende de un seek en vivo del video visible y no se
+    // percibe pausa ni salto entre repeticiones.
     var FADE_S = 0.4;
-    video.style.transition = 'opacity ' + FADE_S + 's ease';
-    var lastTime = 0;
-    video.addEventListener('timeupdate', function () {
-      if (video.duration && video.duration - video.currentTime < FADE_S) {
-        video.style.opacity = '0';
-      } else if (video.currentTime < lastTime - 1) {
-        video.style.opacity = '1';
+    var LEAD_S = 0.6;
+    videoA.style.transition = videoB.style.transition = 'opacity ' + FADE_S + 's ease';
+
+    var active = videoA;
+    var standby = videoB;
+    var stage = 0; // 0 = reproduciendo, 1 = standby calentando, 2 = cruzando
+
+    function tick() {
+      if (!active.duration) return;
+      var remaining = active.duration - active.currentTime;
+      if (stage === 0 && remaining < LEAD_S) {
+        stage = 1;
+        standby.currentTime = 0;
+        var p = standby.play();
+        if (p && p.catch) p.catch(function () {});
+      } else if (stage === 1 && remaining < FADE_S) {
+        stage = 2;
+        active.style.opacity = '0';
+        standby.style.opacity = '1';
+        var prevActive = active;
+        active = standby;
+        standby = prevActive;
+        setTimeout(function () {
+          standby.pause();
+          stage = 0;
+        }, FADE_S * 1000 + 100);
       }
-      lastTime = video.currentTime;
-    });
-    video.play().catch(function () {});
+    }
+
+    videoA.addEventListener('timeupdate', tick);
+    videoB.addEventListener('timeupdate', tick);
+    videoA.play().catch(function () {});
   })();
 </script>
 <!-- Primary & Secondary CTA Buttons -->
