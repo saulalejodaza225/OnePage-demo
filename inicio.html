@@ -107,7 +107,7 @@
 <button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="rapido" type="button">Rápidos (5-8 días)</button>
 <button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="catalogo" type="button">Con Catálogo</button>
 <button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="marketing" type="button">Estrategia de marketing y redes sociales</button>
-<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="combos" type="button">Combos</button>
+<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95 scroll-mt-28" data-filter="combos" id="filtro-combos" type="button">Combos</button>
 <button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="diseno" type="button">Asesoramiento de Diseño</button>
 </div>
 </div>
@@ -399,6 +399,11 @@
 </a>
 </div>
 </article>
+<!-- Divisor interno: subsección Combos -->
+<div class="flex flex-col gap-1 pt-2 mt-1 border-t border-outline-variant/40">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider pt-2">Combos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Paquete + acompañamiento de marketing en un solo pago, con descuento doble.</p>
+</div>
 <!-- Plan Impulso Rápido (combo) -->
 <article class="package-item bg-surface-container-lowest rounded-xl p-space-md shadow-[0_6px_24px_-2px_rgba(7,14,27,0.12)] relative overflow-hidden flex flex-col gap-3.5 ring-2 ring-primary-container card-lift card-lift--featured" data-tags="combos">
 <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-primary-container text-on-secondary-fixed font-label-sm text-[11px] font-bold uppercase tracking-wider shadow-sm">
@@ -1760,6 +1765,15 @@
       });
     });
   });
+
+  // Deep link a un filtro específico del catálogo (ej. inicio.html#filtro-combos)
+  if (location.hash) {
+    const targetPill = document.querySelector('.filter-pill' + location.hash);
+    if (targetPill) {
+      targetPill.click();
+      setTimeout(() => targetPill.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+    }
+  }
 
   // Lead Form Submission (Web3Forms)
   const leadForm = document.getElementById('leadForm');
