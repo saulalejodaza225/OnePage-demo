@@ -32,7 +32,19 @@
     if (!video) return;
     var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) return;
-    // Secuencia completa (galaxia + rugido) en bucle continuo.
+    // Secuencia completa (galaxia + rugido) en bucle continuo, con un fundido corto
+    // justo en el reinicio para que el cambio de escena no se vea como un salto o recarga.
+    var FADE_S = 0.4;
+    video.style.transition = 'opacity ' + FADE_S + 's ease';
+    var lastTime = 0;
+    video.addEventListener('timeupdate', function () {
+      if (video.duration && video.duration - video.currentTime < FADE_S) {
+        video.style.opacity = '0';
+      } else if (video.currentTime < lastTime - 1) {
+        video.style.opacity = '1';
+      }
+      lastTime = video.currentTime;
+    });
     video.play().catch(function () {});
   })();
 </script>
