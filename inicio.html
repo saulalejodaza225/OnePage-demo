@@ -8,11 +8,8 @@
 <section class="w-full bg-on-secondary-fixed text-surface relative overflow-hidden shadow-sm">
 <!-- Video hero del león con galaxia: decorativo, detrás/encima del texto en móvil, 55% derecha en escritorio -->
 <div class="absolute inset-0 lg:left-auto lg:right-0 lg:w-[55%]" id="heroLeonWrap">
-<video aria-hidden="true" class="absolute inset-0 w-full h-full object-contain lg:object-right object-bottom will-change-transform" id="heroLeonVideo" muted="" playsinline="" poster="assets/marca/imagenes/hero-leon-galaxia-1600.jpg" preload="auto">
-<source src="assets/marca/video/hero-leon-galaxia-completo.mp4" type="video/mp4"/>
-</video>
-<video aria-hidden="true" class="absolute inset-0 w-full h-full object-contain lg:object-right object-bottom will-change-transform opacity-0" id="heroLeonVideoB" muted="" playsinline="" preload="auto">
-<source src="assets/marca/video/hero-leon-galaxia-completo.mp4" type="video/mp4"/>
+<video aria-hidden="true" class="w-full h-full object-contain lg:object-right object-bottom will-change-transform" id="heroLeonVideo" muted="" playsinline="" poster="assets/marca/imagenes/hero-leon-galaxia-1600.jpg" preload="auto">
+<source src="assets/marca/video/hero-leon-galaxia.mp4" type="video/mp4"/>
 </video>
 <div class="absolute inset-0 bg-gradient-to-b from-on-secondary-fixed via-on-secondary-fixed/45 via-60% to-transparent to-92% lg:bg-gradient-to-r lg:from-on-secondary-fixed lg:via-on-secondary-fixed/35 lg:via-40% lg:to-transparent lg:to-70%"></div>
 </div>
@@ -31,49 +28,12 @@
       </p>
 <script>
   (function () {
-    var videoA = document.getElementById('heroLeonVideo');
-    var videoB = document.getElementById('heroLeonVideoB');
-    if (!videoA || !videoB) return;
+    var video = document.getElementById('heroLeonVideo');
+    if (!video) return;
     var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) return;
-    // Secuencia completa (galaxia + rugido) en bucle continuo. Se usan dos <video> superpuestos:
-    // mientras uno se ve, el otro ya arrancó en segundo plano (invisible) y va "calentando" su
-    // reproducción, así el reinicio nunca depende de un seek en vivo del video visible. Las dos
-    // opacidades cambian a la vez (una baja mientras la otra sube) para que la pantalla nunca
-    // quede vacía/oscura un instante — eso es lo que se leía como una pausa.
-    var FADE_S = 0.25;
-    var LEAD_S = 0.8;
-    videoA.style.transition = videoB.style.transition = 'opacity ' + FADE_S + 's linear';
-
-    var active = videoA;
-    var standby = videoB;
-    var stage = 0; // 0 = reproduciendo, 1 = standby calentando, 2 = cruzando
-
-    function tick() {
-      if (!active.duration) return;
-      var remaining = active.duration - active.currentTime;
-      if (stage === 0 && remaining < LEAD_S) {
-        stage = 1;
-        standby.currentTime = 0;
-        var p = standby.play();
-        if (p && p.catch) p.catch(function () {});
-      } else if (stage === 1 && remaining < FADE_S) {
-        stage = 2;
-        active.style.opacity = '0';
-        standby.style.opacity = '1';
-        var prevActive = active;
-        active = standby;
-        standby = prevActive;
-        setTimeout(function () {
-          standby.pause();
-          stage = 0;
-        }, FADE_S * 1000 + 100);
-      }
-    }
-
-    videoA.addEventListener('timeupdate', tick);
-    videoB.addEventListener('timeupdate', tick);
-    videoA.play().catch(function () {});
+    // Se reproduce una sola vez y se queda pausado de forma natural en el último fotograma (sin loop ni salto forzado).
+    video.play().catch(function () {});
   })();
 </script>
 <!-- Primary & Secondary CTA Buttons -->
