@@ -38,11 +38,12 @@
     if (prefersReducedMotion) return;
     // Secuencia completa (galaxia + rugido) en bucle continuo. Se usan dos <video> superpuestos:
     // mientras uno se ve, el otro ya arrancó en segundo plano (invisible) y va "calentando" su
-    // reproducción, así el reinicio nunca depende de un seek en vivo del video visible y no se
-    // percibe pausa ni salto entre repeticiones.
-    var FADE_S = 0.4;
-    var LEAD_S = 0.6;
-    videoA.style.transition = videoB.style.transition = 'opacity ' + FADE_S + 's ease';
+    // reproducción, así el reinicio nunca depende de un seek en vivo del video visible. Las dos
+    // opacidades cambian a la vez (una baja mientras la otra sube) para que la pantalla nunca
+    // quede vacía/oscura un instante — eso es lo que se leía como una pausa.
+    var FADE_S = 0.25;
+    var LEAD_S = 0.8;
+    videoA.style.transition = videoB.style.transition = 'opacity ' + FADE_S + 's linear';
 
     var active = videoA;
     var standby = videoB;
