@@ -125,6 +125,139 @@
       fotos: 50,
       tipo: 'paquete',
       icon: 'bolt'
+    },
+    // Combos "Impulso + Acompañamiento": precio = (precioOriginal del Plan Impulso + precio del Acompañamiento) x 0.85 (temporada) x 0.90 (descuento fijo de combo, permanente y acumulable)
+    'combo-impulso-rapido-bronce': {
+      id: 'combo-impulso-rapido-bronce',
+      nombre: 'Plan Impulso Rápido + Acompañamiento Bronce',
+      resumen: 'Landing Page + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Bronce. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '5 días hábiles',
+      precio: 1097393,
+      precioOriginal: 1434500,
+      fotos: 15,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-rapido-plata': {
+      id: 'combo-impulso-rapido-plata',
+      nombre: 'Plan Impulso Rápido + Acompañamiento Plata',
+      resumen: 'Landing Page + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Plata. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '5 días hábiles',
+      precio: 1250393,
+      precioOriginal: 1634500,
+      fotos: 15,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-rapido-oro': {
+      id: 'combo-impulso-rapido-oro',
+      nombre: 'Plan Impulso Rápido + Acompañamiento Oro',
+      resumen: 'Landing Page + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Oro. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '5 días hábiles',
+      precio: 1594643,
+      precioOriginal: 2084500,
+      fotos: 15,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-pyme-bronce': {
+      id: 'combo-impulso-pyme-bronce',
+      nombre: 'Plan Impulso PYME + Acompañamiento Bronce',
+      resumen: 'Página PYME + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Bronce. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '8 días hábiles',
+      precio: 1441643,
+      precioOriginal: 1884500,
+      fotos: 20,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-pyme-plata': {
+      id: 'combo-impulso-pyme-plata',
+      nombre: 'Plan Impulso PYME + Acompañamiento Plata',
+      resumen: 'Página PYME + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Plata. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '8 días hábiles',
+      precio: 1594643,
+      precioOriginal: 2084500,
+      fotos: 20,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-pyme-oro': {
+      id: 'combo-impulso-pyme-oro',
+      nombre: 'Plan Impulso PYME + Acompañamiento Oro',
+      resumen: 'Página PYME + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Oro. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '8 días hábiles',
+      precio: 1938893,
+      precioOriginal: 2534500,
+      fotos: 20,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-empresarial-bronce': {
+      id: 'combo-impulso-empresarial-bronce',
+      nombre: 'Plan Impulso Empresarial + Acompañamiento Bronce',
+      resumen: 'Página Empresarial + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Bronce. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '12 días hábiles',
+      precio: 1900643,
+      precioOriginal: 2484500,
+      fotos: 35,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-empresarial-plata': {
+      id: 'combo-impulso-empresarial-plata',
+      nombre: 'Plan Impulso Empresarial + Acompañamiento Plata',
+      resumen: 'Página Empresarial + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Plata. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '12 días hábiles',
+      precio: 2053643,
+      precioOriginal: 2684500,
+      fotos: 35,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-empresarial-oro': {
+      id: 'combo-impulso-empresarial-oro',
+      nombre: 'Plan Impulso Empresarial + Acompañamiento Oro',
+      resumen: 'Página Empresarial + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Oro. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '12 días hábiles',
+      precio: 2397893,
+      precioOriginal: 3134500,
+      fotos: 35,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-tienda-bronce': {
+      id: 'combo-impulso-tienda-bronce',
+      nombre: 'Plan Impulso Tienda + Acompañamiento Bronce',
+      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Bronce. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '15 días hábiles',
+      precio: 2359643,
+      precioOriginal: 3084500,
+      fotos: 50,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-tienda-plata': {
+      id: 'combo-impulso-tienda-plata',
+      nombre: 'Plan Impulso Tienda + Acompañamiento Plata',
+      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Plata. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '15 días hábiles',
+      precio: 2512643,
+      precioOriginal: 3284500,
+      fotos: 50,
+      tipo: 'paquete',
+      icon: 'bolt'
+    },
+    'combo-impulso-tienda-oro': {
+      id: 'combo-impulso-tienda-oro',
+      nombre: 'Plan Impulso Tienda + Acompañamiento Oro',
+      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP + 1 mes de Acompañamiento de Marketing Oro. Desde el segundo mes, el acompañamiento se factura a su tarifa mensual normal.',
+      entrega: '15 días hábiles',
+      precio: 2856893,
+      precioOriginal: 3734500,
+      fotos: 50,
+      tipo: 'paquete',
+      icon: 'bolt'
     }
   };
 
