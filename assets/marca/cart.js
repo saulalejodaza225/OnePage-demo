@@ -40,7 +40,7 @@
     },
     tienda: {
       id: 'tienda',
-      nombre: 'Tienda Online',
+      nombre: 'E-store',
       resumen: 'Catálogo con checkout, carrito y pagos en línea (PSE, Nequi, Tarjetas)',
       entrega: '15 días hábiles',
       precio: 2040000,
@@ -117,8 +117,8 @@
     },
     'combo-impulso-tienda': {
       id: 'combo-impulso-tienda',
-      nombre: 'Plan Impulso Tienda',
-      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP incluidos, para lanzar y afinar tu tienda sin pagar aparte las primeras semanas',
+      nombre: 'Plan Impulso E-store',
+      resumen: 'E-store + 2 meses de Mantenimiento VIP incluidos, para lanzar y afinar tu tienda sin pagar aparte las primeras semanas',
       entrega: '15 días hábiles',
       precio: 2197675,
       precioOriginal: 2585500,
@@ -228,8 +228,8 @@
     },
     'combo-impulso-tienda-bronce': {
       id: 'combo-impulso-tienda-bronce',
-      nombre: 'Plan Impulso Tienda + Acompañamiento Bronce',
-      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP + Acompañamiento de Marketing Bronce con precio de combo garantizado por 3 meses. Después del mes 3, se factura a su tarifa mensual normal.',
+      nombre: 'Plan Impulso E-store + Acompañamiento Bronce',
+      resumen: 'E-store + 2 meses de Mantenimiento VIP + Acompañamiento de Marketing Bronce con precio de combo garantizado por 3 meses. Después del mes 3, se factura a su tarifa mensual normal.',
       entrega: '15 días hábiles',
       precio: 2359643,
       precioOriginal: 3084500,
@@ -239,8 +239,8 @@
     },
     'combo-impulso-tienda-plata': {
       id: 'combo-impulso-tienda-plata',
-      nombre: 'Plan Impulso Tienda + Acompañamiento Plata',
-      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP + Acompañamiento de Marketing Plata con precio de combo garantizado por 6 meses. Después del mes 6, se factura a su tarifa mensual normal.',
+      nombre: 'Plan Impulso E-store + Acompañamiento Plata',
+      resumen: 'E-store + 2 meses de Mantenimiento VIP + Acompañamiento de Marketing Plata con precio de combo garantizado por 6 meses. Después del mes 6, se factura a su tarifa mensual normal.',
       entrega: '15 días hábiles',
       precio: 2512643,
       precioOriginal: 3284500,
@@ -250,8 +250,8 @@
     },
     'combo-impulso-tienda-oro': {
       id: 'combo-impulso-tienda-oro',
-      nombre: 'Plan Impulso Tienda + Acompañamiento Oro',
-      resumen: 'Tienda Online + 2 meses de Mantenimiento VIP + Acompañamiento de Marketing Oro con precio de combo garantizado por 12 meses. Después del mes 12, se factura a su tarifa mensual normal.',
+      nombre: 'Plan Impulso E-store + Acompañamiento Oro',
+      resumen: 'E-store + 2 meses de Mantenimiento VIP + Acompañamiento de Marketing Oro con precio de combo garantizado por 12 meses. Después del mes 12, se factura a su tarifa mensual normal.',
       entrega: '15 días hábiles',
       precio: 2856893,
       precioOriginal: 3734500,
