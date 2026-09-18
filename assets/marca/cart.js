@@ -82,6 +82,19 @@
       tipo: 'complemento',
       icon: 'workspace_premium'
     },
+    // Precio derivado de la misma tarifa implícita usada en los combos "Plan Impulso"
+    // (2 meses de Mantenimiento VIP = $185.500 dentro de esos combos, es decir $92.750/mes).
+    'mantenimiento-vip': {
+      id: 'mantenimiento-vip',
+      nombre: 'Mantenimiento VIP',
+      resumen: 'Cambios de contenido (textos, precios, fotos) y soporte prioritario cada mes, sin producción de contenido para redes sociales',
+      entrega: 'Facturación mensual',
+      precio: 92750,
+      precioOriginal: 92750,
+      fotos: 0,
+      tipo: 'complemento',
+      icon: 'build'
+    },
     'combo-impulso-rapido': {
       id: 'combo-impulso-rapido',
       nombre: 'Plan Impulso Rápido',

@@ -142,13 +142,17 @@
 <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
 <input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 outline-none shadow-sm focus:ring-2 focus:ring-primary" id="packageSearchInput" placeholder="Buscar por función (ej. blog, pagos, cms)..." type="text"/>
 </div>
-<div class="flex gap-1.5 overflow-x-auto pb-1 text-label-sm">
-<button class="filter-pill px-3 py-1.5 rounded-full bg-on-secondary-fixed text-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="all" type="button">Todos (25)</button>
-<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="rapido" type="button">Rápidos (5-8 días)</button>
-<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="catalogo" type="button">Con Catálogo</button>
-<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="marketing" type="button">Estrategia de marketing y redes sociales</button>
-<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95 scroll-mt-28" data-filter="combos" id="filtro-combos" type="button">Combos</button>
-<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm whitespace-nowrap active:scale-95" data-filter="diseno" type="button">Asesoramiento de Diseño</button>
+<div class="relative w-full scroll-mt-28" id="filtro-combos">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">filter_list</span>
+<select class="category-filter-select w-full h-11 pl-10 pr-9 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm outline-none focus:ring-2 focus:ring-primary appearance-none" id="categoryFilterSelect">
+<option value="all">Todos (26)</option>
+<option value="rapido">Rápidos (5-8 días)</option>
+<option value="catalogo">Con Catálogo</option>
+<option value="marketing">Estrategia de marketing y redes sociales</option>
+<option value="combos">Combos</option>
+<option value="diseno">Asesoramiento de Diseño</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">expand_more</span>
 </div>
 </div>
 <!-- The 4 Package Cards -->
@@ -435,6 +439,45 @@
 <span>Agregar al carrito</span>
 </button>
 <a class="w-11 h-11 rounded-lg bg-[#25D366] text-[#0B1D33] flex items-center justify-center hover:brightness-105 shadow-sm" href="https://wa.me/573202784199?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Acompa%C3%B1amiento%20de%20Marketing%20Oro" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</a>
+</div>
+</article>
+<!-- Mantenimiento VIP (solo mantenimiento, sin Acompañamiento de Marketing) -->
+<article class="package-item bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_-2px_rgba(7,14,27,0.06)] relative overflow-hidden flex flex-col gap-3.5 card-lift" data-tags="mantenimiento">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-[12px] font-semibold text-on-secondary-fixed">Mantenimiento VIP</span>
+<span class="font-label-sm text-[12px] text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_repeat</span> Facturación mensual
+          </span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-secondary-fixed">COP $92.750</span>
+</div>
+<p class="font-label-sm text-tertiary mt-0.5 font-bold">Sin Acompañamiento de Marketing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 font-medium">Ideal si solo necesitas soporte y cambios de contenido</p>
+</div>
+<div class="flex flex-col gap-2 py-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Cambios de contenido (textos, precios, fotos) cada mes</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Soporte prioritario ante cualquier ajuste técnico</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Sin producción de contenido para redes sociales</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-11 rounded-lg bg-primary-container text-on-secondary-fixed font-label-md text-label-md font-semibold hover:bg-primary-fixed-dim transition-colors flex items-center justify-center gap-1.5 shadow-sm" onclick="addPackageToCart('mantenimiento-vip')" type="button">
+<span class="material-symbols-outlined text-[19px]">add_shopping_cart</span>
+<span>Agregar al carrito</span>
+</button>
+<a class="w-11 h-11 rounded-lg bg-[#25D366] text-[#0B1D33] flex items-center justify-center hover:brightness-105 shadow-sm" href="https://wa.me/573202784199?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Mantenimiento%20VIP" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[20px]">chat</span>
 </a>
 </div>
@@ -1725,10 +1768,12 @@
 
   function addPackageToCart(id) {
     OnePageCart.add(id);
-    // Los combos ya incluyen su propio acompañamiento de marketing (o ya son el upsell en sí),
-    // así que van directo a checkout y se saltan la pantalla de "añadir más productos".
-    var esCombo = id.indexOf('combo-') === 0;
-    window.location.href = esCombo ? 'checkout.html' : 'complementos.html';
+    // Solo los combos que YA incluyen un nivel de Acompañamiento de Marketing (Bronce/Plata/Oro)
+    // van directo a checkout. Todo lo demás (paquetes base, Plan Impulso sin marketing,
+    // Mantenimiento VIP suelto, niveles de Acompañamiento sueltos) sigue pasando por
+    // "añadir productos", ya que ahí es donde se les puede ofrecer el marketing que les falta.
+    var yaIncluyeMarketing = id.indexOf('combo-') === 0 && /-(bronce|plata|oro)$/.test(id);
+    window.location.href = yaIncluyeMarketing ? 'checkout.html' : 'complementos.html';
   }
 
   window.addEventListener('onepage:cart-updated', renderCartBadges);
@@ -1771,7 +1816,7 @@
   // Dynamic Catalog Search & Tag Filter
   const searchInput = document.getElementById('packageSearchInput');
   const packageItems = document.querySelectorAll('.package-item');
-  const filterPills = document.querySelectorAll('.filter-pill');
+  const categoryFilterSelect = document.getElementById('categoryFilterSelect');
 
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
@@ -1787,34 +1832,29 @@
     });
   }
 
-  filterPills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      filterPills.forEach(p => {
-        p.classList.remove('bg-on-secondary-fixed', 'text-surface');
-        p.classList.add('bg-surface-container-high', 'text-on-surface');
-      });
-      pill.classList.remove('bg-surface-container-high', 'text-on-surface');
-      pill.classList.add('bg-on-secondary-fixed', 'text-surface');
-
-      const filter = pill.getAttribute('data-filter');
-      packageItems.forEach(item => {
-        const tags = item.getAttribute('data-tags') || '';
-        if (filter === 'all' || tags.includes(filter)) {
-          item.style.display = 'flex';
-        } else {
-          item.style.display = 'none';
-        }
-      });
+  function applyCategoryFilter(filter) {
+    packageItems.forEach(item => {
+      const tags = item.getAttribute('data-tags') || '';
+      if (filter === 'all' || tags.includes(filter)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
     });
-  });
+  }
+
+  if (categoryFilterSelect) {
+    categoryFilterSelect.addEventListener('change', () => {
+      applyCategoryFilter(categoryFilterSelect.value);
+    });
+  }
 
   // Deep link a un filtro específico del catálogo (ej. inicio.html#filtro-combos)
-  if (location.hash) {
-    const targetPill = document.querySelector('.filter-pill' + location.hash);
-    if (targetPill) {
-      targetPill.click();
-      setTimeout(() => targetPill.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
-    }
+  if (location.hash === '#filtro-combos' && categoryFilterSelect) {
+    categoryFilterSelect.value = 'combos';
+    applyCategoryFilter('combos');
+    var comboWrap = document.getElementById('filtro-combos');
+    setTimeout(() => comboWrap.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
   }
 
   // Lead Form Submission (Web3Forms)
