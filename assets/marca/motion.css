@@ -1,0 +1,57 @@
+/* Movimiento de marca: parallax por capas, estrellas y revelado al hacer scroll.
+   Todo se desactiva con prefers-reduced-motion. */
+
+[data-parallax] {
+  will-change: transform;
+}
+
+/* Estrella de cuatro puntas de la marca, posicionada con --x / --y (porcentajes) */
+.op-star {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--s, 10px);
+  height: var(--s, 10px);
+  color: var(--c, #f4b63f);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.op-star svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: var(--o, 0.7);
+  filter: drop-shadow(0 0 5px currentColor);
+  animation: op-twinkle var(--d, 4.2s) ease-in-out var(--delay, 0s) infinite;
+}
+@keyframes op-twinkle {
+  0%, 100% { opacity: var(--o, 0.7); transform: scale(1); }
+  50% { opacity: calc(var(--o, 0.7) * 0.3); transform: scale(0.7); }
+}
+
+/* Revelado: solo se oculta si motion.js confirmó que puede animar */
+.motion-ready .reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.motion-ready .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-parallax] {
+    transform: none !important;
+    will-change: auto;
+  }
+  .op-star svg {
+    animation: none;
+  }
+  .motion-ready .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

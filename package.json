@@ -1,0 +1,13 @@
+{
+  "name": "onepage-web",
+  "private": true,
+  "description": "Sitio estático de One Page. Tras editar clases de Tailwind o íconos de Material Symbols en los .html/.js, ejecuta: npm run build:assets",
+  "scripts": {
+    "build:icons": "node scripts/sync-icons.js",
+    "build:css": "tailwindcss -c tailwind.config.js -i assets/marca/tailwind.src.css -o assets/marca/site.css --minify",
+    "build:assets": "npm run build:icons && npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

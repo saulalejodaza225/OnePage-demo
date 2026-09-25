@@ -3,7 +3,7 @@
 
   var STORAGE_KEY = 'onepage_carrito';
 
-  // Catálogo: mismos nombres, precios y tiempos de entrega ya publicados en inicio.html#catalogo
+  // Catálogo: mismos nombres, precios y tiempos de entrega ya publicados en index.html#catalogo
   var CATALOG = {
     landing: {
       id: 'landing',
