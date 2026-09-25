@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Con el zoom del usuario habilitado, iOS Safari amplía la página al enfocar campos con texto
+   menor a 16px. Se fija 16px en pantallas pequeñas para evitarlo. */
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
