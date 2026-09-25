@@ -32,18 +32,22 @@
 
     var active = [];
     var ticking = false;
-    var viewport = window.innerHeight;
 
+    // Se ejecuta dentro de requestAnimationFrame: primero todas las lecturas de layout, luego todas
+    // las escrituras, para no forzar maquetaciones intermedias.
     function update() {
       ticking = false;
       if (reduced()) return;
-      active.forEach(function (scene) {
+      var viewport = window.innerHeight;
+      var offsets = active.map(function (scene) {
         var rect = scene.getBoundingClientRect();
-        var offset = scene.getAttribute('data-parallax-scene') === 'top'
+        return scene.getAttribute('data-parallax-scene') === 'top'
           ? Math.max(0, -rect.top)
           : viewport / 2 - (rect.top + rect.height / 2);
+      });
+      active.forEach(function (scene, i) {
         scene._layers.forEach(function (layer) {
-          layer.el.style.transform = 'translate3d(0,' + (offset * layer.speed).toFixed(1) + 'px,0)';
+          layer.el.style.transform = 'translate3d(0,' + (offsets[i] * layer.speed).toFixed(1) + 'px,0)';
         });
       });
     }
@@ -64,7 +68,7 @@
     scenes.forEach(function (scene) { io.observe(scene); });
 
     window.addEventListener('scroll', requestUpdate, { passive: true });
-    window.addEventListener('resize', function () { viewport = window.innerHeight; requestUpdate(); });
+    window.addEventListener('resize', requestUpdate);
     if (reduceQuery && reduceQuery.addEventListener) {
       reduceQuery.addEventListener('change', function () {
         if (!reduced()) { requestUpdate(); return; }
